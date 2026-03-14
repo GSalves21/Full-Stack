@@ -38,7 +38,7 @@ h2{
 .Introdução{
     color:indigo;
     display:flex;
-    flex-direction:wrap;
+    flex-direction:row;;
     flex-wrap:wrap;
     font-family:"SansSerif";
     
@@ -81,13 +81,13 @@ td{
 
 .Sites{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    margin:40px;
+    flex-flow:column wrap;
+    justify-content:flex-start;
     align-items:center;
-    background-color:rgb(255, 255, 0);
-    margin-top:20px;
-    margin-bottom:20px;
+    background-color:yellow;
     
+
 }
 
 .final{
@@ -95,9 +95,9 @@ td{
     flex-direction:row;
     justify-content:space-between;
     background-color:bisque;
-    align-items:center;;
+    align-items:center;
     font-family:"Comic Sans Ms";
-    height:150px;
+    
 }
 #Foto{
     width:100px;
@@ -107,4 +107,8 @@ td{
 .Foto_fim{
     width:80;
     height:100px;
+}
+
+.links{
+    align-self: column;
 }

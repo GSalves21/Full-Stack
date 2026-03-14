@@ -1,7 +1,47 @@
-.menu{
- background-color:aqua;
- padding:
+td{
+    padding:10px;
 }
-.l1{
-    border: 2px solid black;
+#tabela_titulo{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.body{
+    background-color:azure;
+}
+.menu_tabela{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color:yellow;
+}
+
+.table{
+    padding:10px;
+    border: blue;
+}
+#tb{
+    display:flex;
+    justify-content:center;
+}
+a:hover{
+   background-color:brown;
+}
+.menu_itens{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color:aquamarine;
+}
+#h1{
+    display:flex;
+    justify-content:center;
+}
+#body{
+    background-color:antiquewhite;
+}
+.instagram-media{
+    width:1000px;
+    height:500px;
+    
 }
