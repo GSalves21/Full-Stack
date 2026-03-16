@@ -1,5 +1,6 @@
 body{
     background-color:lightgray;
+
 }
 .Topo{
     display:flex;
@@ -71,6 +72,7 @@ h2{
 .Tabela{
     display:flex;
     justify-content:center;
+    margin:20px;
 }
 #table{
     border:1px dashed red;
@@ -79,24 +81,38 @@ td{
     padding:10px;
 }
 
+
 .Sites{
     display:flex;
-    margin:40px;
-    flex-flow:column wrap;
-    justify-content:flex-start;
-    align-items:center;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin:0 auto;
+    width:600px;
+    height:130px;
+    gap:2px;
     background-color:yellow;
-    
-
 }
+
+
+.link{
+    width:fit-content;
+    height:fit-content;
+    color:darkred;
+    
+}
+
 
 .final{
     display:flex;
+    margin-top:15px;
     flex-direction:row;
     justify-content:space-between;
     background-color:bisque;
     align-items:center;
     font-family:"Comic Sans Ms";
+    width:100%;
     
 }
 #Foto{
@@ -105,10 +121,7 @@ td{
     order:-1;
 }
 .Foto_fim{
-    width:80;
+    width:80px;
     height:100px;
 }
 
-.links{
-    align-self: column;
-}

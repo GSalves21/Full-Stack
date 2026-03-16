@@ -1,6 +1,12 @@
-#so{
-    color:blue;
-    border-style:solid;
-    right:50%;
-    position: fixed;
+.menu{
+    display:inline;
+    margin:20px;
+    padding:20px;
+    border:20px;
+    background-color:lightblue;
+    width:500px;
+}
+.menu_2_link{
+    position:relative;
+    left:150px;
 }
