@@ -1,31 +1,39 @@
-.inicio{
+.imagens_topo{
     display:flex;
-    flex-direction:row;
     justify-content:center;
     gap:5px;
+    margin-top:20px;
     
 }
-#bloco_roxo{
-    background-color:purple;
-    height:150px;;
+#texto_topo{
+    background-color :purple;
+    color:white;
     width:150px;
-    color:white
+    
+
 }
-#menu{
+.menu{
     display:flex;
-    flex-direction:row;
-    justify-content:center;
-     margin-top:5px;
-     gap:7px;
+    justify-content: center;
+    gap:10px;
+    margin-top:10px;
 }
-#outro_site{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:5px;
-}
-#friends{
+#more_links{
     display:flex;
     justify-content:center;
-    margin-top:20px;
+    gap:10px;
+
+}
+#Friends{
+    display:flex;
+    justify-content: center;
+    margin-top:35px;
+}
+.fotos{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+.texto{
+    
 }
