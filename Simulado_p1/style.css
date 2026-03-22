@@ -1,39 +1,55 @@
-.imagens_topo{
+#inicio{
     display:flex;
     justify-content:center;
+    margin-top:15px;
     gap:5px;
-    margin-top:20px;
-    
 }
-#texto_topo{
-    background-color :purple;
+.texto_inicio{
     color:white;
+    background-color: blueviolet;
     width:150px;
-    
-
 }
-.menu{
-    display:flex;
-    justify-content: center;
-    gap:10px;
-    margin-top:10px;
-}
-#more_links{
+#links{
     display:flex;
     justify-content:center;
-    gap:10px;
-
+    margin-top:5px;
+    margin-bottom:20px;
+}
+#paragraph{
+    color:blueviolet;
+    
+}
+.more_links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    margin-top:5px;
+    gap:5px;
+    margin-bottom:30px;
 }
 #Friends{
     display:flex;
-    justify-content: center;
-    margin-top:35px;
+    justify-content:center;
 }
-.fotos{
+.photos{
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    margin-bottom:30px;
 }
-.texto{
-    
+#hr{
+    background-color:#5BC0DE;
+    height:2px;
+    border:none;
+}
+figcaption{
+    color:blueviolet;
+}
+.menu_final{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+}
+#fim{
+    display:flex;
+    justify-content:center;
 }
