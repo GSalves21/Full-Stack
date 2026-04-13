@@ -7,7 +7,7 @@ td{
     justify-content:center;
 }
 .body{
-    background-color:azure;
+    background-color:yellow;
 }
 .menu_tabela{
     display:flex;
@@ -38,7 +38,7 @@ a:hover{
     justify-content:center;
 }
 #body{
-    background-color:antiquewhite;
+    background-color:blue;
 }
 .instagram-media{
     width:1000px;
