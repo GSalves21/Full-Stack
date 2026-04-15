@@ -67,4 +67,22 @@ ctx.font = "35px Arial";
 ctx.fillText("Desenvolvimento Web",75,75);
 ctx.closePath();
 
+//colocarei as bolinhas amarelas:
+ctx.beginPath();
+ctx.strokeStyle = "green";
+ctx.fillStyle = "yellow";
+ctx.arc(80,165,25,0*Math.PI,2*Math.PI);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.strokeStyle = "green";
+ctx.fillStyle = "yellow";
+ctx.arc(410,165,25,0*Math.PI,2*Math.PI);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
 
