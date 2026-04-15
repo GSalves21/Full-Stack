@@ -33,6 +33,8 @@ let retangulo_2 =  {
     color: "blue"
 };
 
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 let canvas = document.getElementById("canvas");
@@ -78,7 +80,7 @@ ctx.beginPath();
 ctx.lineWidth = 2;
 ctx.fillStyle="blue";
 ctx.strokeStyle="red";
-ctx.font = ";
+ctx.font ="40px Arial";
 ctx.textAlign = "center";
 ctx.strokeText("olá",200,350);
 ctx.fillText("olá",200,350);
