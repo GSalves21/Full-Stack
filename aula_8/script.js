@@ -36,7 +36,7 @@ ctx.fillRect(ret.x,ret.y,ret.w,ret.h);
 ctx.closePath();
 }
 
-function manja_bola(){
+function bola(){
     img = new_Image()
     img.src = "bola.webp"
     ctx.beginPath();
@@ -58,7 +58,7 @@ function desenhar(){
     desenha_retangulo(retangulo_1);
     desenha_retangulo(retangulo_2);
     desenha_retangulo(retangulo_3);
-    manja_bola();
+    bola();
     requestAnimationFrame(desenhar);
 }
 desenhar()
