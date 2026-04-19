@@ -1,5 +1,12 @@
 #canvas{
-    background-color:aquamarine;
-    margin-left :250px;
+    
+    margin-left :500px;
     border : 2px solid black;
+    margin-top:50px;
+}
+#canvas_2{
+    background-color:aquamarine;
+    margin-top:50px;
+    margin-left:500px;
+    
 }
