@@ -6,6 +6,6 @@ document.getElementById("enviar").onclick = function(){
     }
     else{
         document.getElementById("body").style.setProperty("background-color","red");
-        window.alert("Você não adivinhou corretamente, o numero correto era ${random_number}. ")
+        window.alert(`Você não adivinhou corretamente, o numero correto era :${random_number}`)
     }
 }
