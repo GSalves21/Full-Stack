@@ -1,47 +1,49 @@
-canvas = document.getElementById("canvas");
-ctx = canvas.getContext("2d");
+let megaMan = {
+    x : 130,
+    y:130,
+    w:40,
+    h:40
 
-let mega_man = {
-    x:150,
-    y:150,
-    w:50,
-    h:50
-}
-let img =  new Image();
+};
+
+let canvas = document.getElementById("canvas")
+let ctx = canvas.getContext("2d");
+
+
+let img = new Image();
 img.src = "download.png";
-function animation(){
+
+function desenhar(x,y,w,h){
     ctx.clearRect(0,0,300,300);
-    ctx.drawImage(img,mega_man.x,mega_man.y,mega_man.w,mega_man.h)
-    requestAnimationFrame(animation);
-    }
-    
+    ctx.beginPath();
+    ctx.drawImage(img,megaMan.x,megaMan.y,megaMan.w,megaMan.h);
+    ctx.closePath();
+    requestAnimationFrame(desenhar);
+};
+desenhar();
 
 
-animation();
-
-
-
-document.addEventListener("mousemove",function(evento){
+document.addEventListener("mousemove",function(movimento){
     var rect = canvas.getBoundingClientRect();
-    var x_mouse = evento.clientX - rect.left - (mega_man.w/2);
-    var y_mouse = evento.clientY - rect.top - (mega_man.h/2);
-    console.log(x_mouse,y_mouse);
-
-    mega_man.x = x_mouse;
-    mega_man.y = y_mouse;
-    if(mega_man.x >= 300 - mega_man.w){
-        mega_man.x = 300 - mega_man.w;
+    var mouse_x = movimento.clientX - rect.left;
+    var mouse_y = movimento.clientY - rect.top;
+    console.log(mouse_x,mouse_y)
+    megaMan.x = mouse_x;
+    megaMan.y = mouse_y; 
+    if(megaMan.x >= 300 - megaMan.w){
+        megaMan.x = 300 - megaMan.w 
     }
-    else if(mega_man.x <= 0){
-        mega_man.x = 0;
+    else if(megaMan.x <= 0){
+        megaMan.x = 0
+    };
+    if (megaMan.y <= 0){
+        megaMan.y = 0
     }
-    if(mega_man.y <= 0){
-        mega_man.y = 0;
-    }
-    else if(mega_man.y >=300)
-        mega_man.y = 300 - mega_man.h;
-})
+    else if(megaMan.y >= 300 - megaMan.h){
+        megaMan.y = 300 - megaMan.h
+    };
 
 
+});
 
 
