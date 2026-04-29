@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Meu primeiro servidor</title>
+</head>
+
+
+<body>
+    <h1>Hello World</h1>]
+    <img src = "download.jfif" width="1001" height="1000"> </img>
+    <script src = "Servidor.js" type = "text/javascript"></script>
+
+    <h2>Gabriel Alves Silva</h2>
+    <h3>Exemplo de formulário</h3>
+
+    <form action = "/inicio" >
+        <input type="text" name="info">
+        <br>
+        <input type= "number" name="number">
+        <br>
+        <input type = "checkbox">
+        <br>
+        <input type = "color">
+        <br>
+        <input type = "date"> 
+        <br>
+        <input type = "email">
+        <br>
+        <input type="submit" value="enviar por get" formmethod="get">
+
+        s<input type="submit" value="enviar por post" formmethod="post">
+    </form>
+
+    <h3>Exemplo de cadastro</h3>
+    <form method="post" action="/cadastro">
+        <p>Nome: <input type="text"  name="nome"></p>
+        <p>login <input type="text"  name="login"></p>
+        <p>Senha: <input type="password"  name="Senha"></p>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+
+    <h3>Exemplo de uso de for no ejs</h3>
+    <form method="get" action="/for">
+        <p>indique a quantidade de DIVS:</p>
+        <input type="number" name="qtde">
+        <input type="submit">
+        <br>
+        
+    </form>
+</body>
+
+</html>
