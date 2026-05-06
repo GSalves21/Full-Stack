@@ -9,6 +9,19 @@ var express = require('express');
 
 let bodyParser = require("body-parser");
 
+var mongodb = require('mongodb');
+const MongoClient = mongodb.MongoClient;
+
+const uri ='mongodb+srv://Gspython:40028922@cluster0.a8k0as5.mongodb.net/?appName=Cluster0'
+
+const client = new MongoClient(uri, {useNewUrlParser: true});
+
+var dbo = client.db("exemplo_bd"); // cria o banco de dados
+
+var usuarios = dbo.collection("usuarios");// cria uma nova coleção
+
+
+
 //cria a variavél app,pela qual acessaremos os metodos / funções existentes no framework
 var app = express();
 app.use(express.static("/public"));
@@ -70,4 +83,28 @@ app.post("/cadastro",function(req,res){
 app.get("/for",function(req,res){
     var qtde = req.query.qtde
     res.render("exemplo_for.ejs",{qtde:qtde})
+})
+
+app.post("/cadastrar_usuario",function(req,resp){
+    var data = {
+        db_nome: req.body.nome,
+        db_login:req.body.login,
+        db_senha:req.body.senha
+    }
+    
+    usuarios.insertOne(data,function(err){
+        console.log(err);
+        if (err) {
+        resp.render('resposta_usuario', {resposta: "Erro ao cadastrar usuário!"})
+      }else {
+        resp.render('resposta_usuario', {resposta: "Usuário cadastrado com sucesso!"})        
+      };
+    });
+
+    
+
+
+
+
+
 })
