@@ -10,3 +10,18 @@ body{
     color:red;
     margin-top:50px;
 }
+
+#formulario_cadastro{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:25px;
+    margin-left:15px;
+    margin-top:70px;
+}
+
+.botoes{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
