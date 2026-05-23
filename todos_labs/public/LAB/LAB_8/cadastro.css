@@ -1,0 +1,12 @@
+body{
+    background-color:chartreuse;
+    margin:0;
+}
+
+#mensagem{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    color:red;
+    margin-top:50px;
+}

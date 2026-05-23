@@ -1,0 +1,10 @@
+body{
+    background-color:azure;
+    margin:0;
+}
+
+.mensagem{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
