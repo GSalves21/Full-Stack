@@ -42,13 +42,15 @@ app.post('/validar_cadastro',function(req,resp){
     var email = req.body.email;
     var senha = req.body.senha;
     resp.render('cadastro_status', {usuario,email,senha});
+    console.log(usuario,email,senha);
 })
 
 app.post('/logar',function(req,resp){
     var usuario = req.body.usuario;
     var email = req.body.email;
     var senha = req.body.senha;
-    resp.render('resposta', {usuario,email,senha})
+    resp.render('resposta', {usuario,email,senha});
+    console.log(usuario,email,senha);
 })
 
 
