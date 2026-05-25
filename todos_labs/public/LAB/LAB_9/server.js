@@ -10,7 +10,6 @@ server.listen(80);
 
 var mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
-const uri = 'mongodb+srv://Gspython:oUHX0oJ1aOem2qAo@cluster0.a8k0as5.mongodb.net/?appName=Cluster0'
 
 const client = new MongoClient(uri,{useNewUrlParser:true});
 
