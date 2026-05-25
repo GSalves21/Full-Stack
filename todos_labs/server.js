@@ -15,6 +15,8 @@ app.use(bodyParser.json());
 app.set('view engine','ejs');
 app.set('views','./views');
 
+
+
 //cria o servidor e entrega as requisições pro express as fazer
 var servidor = http.createServer(app);
 

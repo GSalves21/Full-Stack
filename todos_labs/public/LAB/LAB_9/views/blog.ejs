@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blog.css">    
+</head>
+
+<body>
+    <form action="/criar" method="get">
+        <button type="submit">Cria Post</button>
+    </form>
+
+
+    <% for(var i=0;i < items.length;i++){ %>
+
+        <div style="background-color:white;display:flex;justify-content:center;align-items:center;border:2px black groove;">
+         <h2><%= items[i].db_titulo  %></h2>
+         <p> <%= items[i].db_resumo %></p>
+         <p> <%= items[i].db_conteudo %></p>
+
+        </div>
+
+    %<} %>
+</body>
+
+</html>
