@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Status cadastro</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1><%= resposta %></h1>
+        
+        <% if (resposta == 'usuario logado com sucesso'){ %>
+            <form action="/gerenciar_carros" method="post">
+                <button type="submit">Continuar</button>
+            </form>
+            <% }else{%>
+                <form action="/logar" method="get">
+                    <input type="submit" value="Tentar novamente">
+                </form><% } %>
+    </body>
+</html>

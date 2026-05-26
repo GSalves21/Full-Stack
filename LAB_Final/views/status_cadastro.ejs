@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Status cadastro</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1><%= resposta %></h1>
+        <% if(resposta == 'Cadastrado com sucesso!'){ %>
+            <form action="/logar" method="get">
+                <input type="submit" value="ir para login">
+                
+            </form>
+             <% }else{ %>
+                <form action="/cadastrar" method="get">
+                    <input type="submit" value="tentar novamente">
+                </form>
+                <% } %>
+    </body>
+</html>

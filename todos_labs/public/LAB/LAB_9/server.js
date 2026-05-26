@@ -6,10 +6,12 @@ var server = http.createServer(app);
 app.set('view engine','ejs');
 app.set('views','./views');
 
-server.listen(80);
+server.listen(3000);
 
 var mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
+const uri='mongodb+srv://Gspython:oUHX0oJ1aOem2qAo@cluster0.a8k0as5.mongodb.net/?appName=Cluster0';
+
 
 const client = new MongoClient(uri,{useNewUrlParser:true});
 
@@ -28,7 +30,14 @@ app.get('/',function(req,resp){
 
 app.get('/blog',function(req,resp){
     posts.find({}).toArray(function(err,items){
-    resp.render('blog',{items});
+        if (items.length == 0){
+            resp.render('blog',{resposta:'Não foi encontrado nenhum post'});
+        }else if(err){
+            resp.render('blog',{resposta:'Erro'})
+        }
+        else{
+        resp.render('blog',{items,resposta:'posts:'});
+        }
     })
 })
 

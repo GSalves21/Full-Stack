@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Gerenciar carros</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="gerenciar.css">
+    </head>
+
+    <body>
+        <h1 id="titulo">Gerenciamento dos veiculos</h1>
+
+        <div class="create">
+            <h2>Cadastrar novo carro</h2>
+            <form action="/novo_carro" method="post" id="form_1">
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="Ford">
+            </div>
+            <div>
+                <label for="Modelo">Modelo:</label>
+                <input type="text" id="modelo" nome="modelo" placeholder="Fiesta">
+            </div>
+            <div>
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" nome="ano" placeholder=2013>
+            </div>
+            <div>
+                <label for ="qtde_disponivel">Quantidade disponivel:</label>
+                <input type="number" id="qtde_disponivel" name="qtde_disponivel" placeholder="2">
+            </div>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Cadastrar</button>
+            </div>
+            </form>
+        </div>
+
+        <div class="create_2">
+            <h2>Remover Carro</h2>
+            <form action="/apagar_carro" method="post" id="form_2">
+                <div>
+                    <label>nome do veiculo a remover</label>
+                    <input type="text" placeholder="Mustang" name="modelo" id="modelo">
+                </div>
+                <div>
+                    <label>Ano do veiculo a ser removido:</label>
+                    <input type="number" id="ano" name="ano" placeholder="2018">
+                </div>
+                <div>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Remover</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="create_3">
+            <h2>Atualizar Carro</h2>
+            <form action="/atualizar" method="post" id="form_3">
+                <div>
+                    <label for="veiculo_a_ser_atualizado">Veiculo a ser atualizado</label>
+                    <input type="text" name="modelo" id="veiculo_a_ser_atualizado" placeholder="Onix">
+                </div>
+                <div>
+                    <label for="ano">ano do veiculo </label>
+                    <input type="number" name="ano" id="ano" placeholder="2019">
+                </div>
+                <div>
+                    <label for="qtde_disponivel">Quantidade disponivel atualizada</label>
+                    <input type="number" name="qtde_disponivel" id="qtde_disponivel" placeholder="2">
+                </div>
+                <div>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Atualizar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="create_4">
+            <h2>Vender</h2>
+            <form action="/vender" method="post" id="form_4">
+                <div>
+                    <label for="veiculo_a_ser_atualizado">Veiculo a ser atualizado</label>
+                    <input type="text" name="modelo" id="veiculo_a_ser_atualizado" placeholder="Corsa">
+                </div>
+                <div>
+                    <label for="ano">ano do veiculo </label>
+                    <input type="number" name="ano" id="ano" placeholder="2018">
+                </div>
+                <div>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Vender</button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </body>
+</html>

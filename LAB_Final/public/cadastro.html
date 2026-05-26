@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Página de cadastro</title>
+        <link rel="stylesheet" href="cadastro.css">
+    </head>
+    <body>
+        <h1>Bem vindo a página de cadastro</h1>
+        <form action="/cadastra" method="post">
+            <div>
+                <label for="criar_usuario">Usuário:</label>
+                <input type="text" name="usuario" id="criar_usuario" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div class="botões">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
