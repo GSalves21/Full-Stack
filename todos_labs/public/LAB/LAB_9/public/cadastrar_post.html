@@ -3,35 +3,32 @@
 <html>
 
     <head>
-        <title><Cadastrar_post class="html"></Cadastrar_post></title>
+        <title>Cadastro_post</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="cadastro.css">
     </head>
-
-
     <body>
-        <h1>Página de cadastro de novos posts no blog:</h1>
-        
-        <form action="/enviar" method = "post">
-            <div>
-                <label for="titulo">Titulo:</label>
-                <input name="titulo" id="titulo" type="text" placeholder="Teste" required>
-            </div>
-            
-            <div>
-                <label for="resumo">Resumo</label>
-                <input type="text" name="resumo" id="resumo" placeholder="esse é um post" required>
-            </div>
-
-            <div>
-                <label for="conteudo">Conteúdo</label>
-                <input type="text" name="conteudo" id="conteudo" placeholder="Esse é o meu primeiro post" required>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-
-
+        <h1>Página de cadastrar posts:</h1>
+        <div class="form">
+            <form  action='/postar' method="post">
+                <div>
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" id="titulo" name="titulo">
+                </div>
+                <div>
+                    <label for="resumo">Resumo:</label>
+                    <input type="text" id="resumo" name="resumo">
+                </div>
+                <div>
+                    <label for="conteudo">Conteudo:</label>
+                    <input type="text" id="conteudo" name="conteudo">
+                </div>
+                <div>
+                    <input type="reset" value="limpar">
+                    <input type="submit" value="postar">
+                </div>
+            </form>
+        </div>
     </body>
+
 </html>

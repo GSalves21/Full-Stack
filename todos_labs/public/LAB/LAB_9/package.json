@@ -1,16 +1,24 @@
 {
-  "name": "lab_9",
+  "name": "full-stack",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/GSalves21/Full-Stack#readme",
+  "bugs": {
+    "url": "https://github.com/GSalves21/Full-Stack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSalves21/Full-Stack.git"
+  },
   "license": "ISC",
   "author": "Gabriel Alves",
   "type": "commonjs",
-  "main": "server.js",
+  "main": "lab_9.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "body-parser": "^2.2.2",
     "ejs": "^5.0.2"
   }
 }

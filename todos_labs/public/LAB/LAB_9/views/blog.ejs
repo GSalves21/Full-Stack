@@ -2,28 +2,22 @@
 
 <html>
 
-<head>
-    <title>Blog</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="blog.css">    
-</head>
+    <head>
+        <title>Cadastro_post</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="blog.css">
+    </head>
+    <body>
+        <h1 #inicio>Bem vindo ao blog!</h1>
+        <form action="/cadastrar_post" method="get">
+            <button type="submit">Cria post</button>
+        </form>
+        <% for(var i =0;i < items.length;i++){ %>
+            <div class="post">
+                <h1><%= items[i].db_titulo %></h1>
+                <h3><%= items[i].db_resumo %></h3>
+                <h3><%= items[i].db_conteudo %></h3>
+            </div>
+        <% }; %>
 
-<body>
-    <form action="/criar" method="get">
-        <button type="submit">Cria Post</button>
-    </form>
-    <h1><%= resposta %></h1>
-
-    <% for(var i=0;i < items.length;i++){ %>
-
-        <div style="background-color:white;display:flex;justify-content:center;align-items:center;border:2px black groove;">
-         <h2><%= items[i].db_titulo  %></h2>
-         <p> <%= items[i].db_resumo %></p>
-         <p> <%= items[i].db_conteudo %></p>
-
-        </div>
-
-    %<}; %>
-</body>
-
-</html>
+    </body>
