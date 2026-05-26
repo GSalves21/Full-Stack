@@ -10,9 +10,12 @@
 
     <body>
         <h1>Cadastro feito com sucesso</h1>
-        <p>bem vindo: <%= usuario %></p>
-        <p>seu email é: <%= email %></p>
-        <p>sua senha é: <%= senha %></p>
+        <p>bem vindo: <%= usuario_cadastrado.usuario  %></p>
+        <p>seu email é: <%= usuario_cadastrado.email %></p>
+        <p>sua senha é: <%=  usuario_cadastrado.senha %></p>
+        <form action="/login" method="get">
+            <input type="submit" value="logar">
+        </form>
     </body>
 
 </html>

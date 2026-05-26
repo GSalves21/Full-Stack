@@ -40,19 +40,21 @@ app.get('/login',function(req,resp){
 })
 
 app.post('/validar_cadastro',function(req,resp){
-    var usuario = req.body.usuario;
-    var email = req.body.email;
-    var senha = req.body.senha;
-    resp.render('cadastro_status', {usuario,email,senha});
-    console.log(usuario,email,senha);
+    usuario_cadastrado = {usuario : req.body.usuario,email : req.body.email, senha :req.body.senha}
+    resp.render('cadastro_status', {usuario_cadastrado});
+    
 })
 
 app.post('/logar',function(req,resp){
     var usuario = req.body.usuario;
     var email = req.body.email;
     var senha = req.body.senha;
+    if (usuario == usuario_cadastrado.usuario && email == usuario_cadastrado.email && senha == usuario_cadastrado.senha){ 
     resp.render('resposta', {usuario,email,senha});
-    console.log(usuario,email,senha);
+    console.log(usuario_cadastrado.usuario,usuario_cadastrado.email,usuario_cadastrado.senha);
+    }else{
+        resp.render('erro.ejs',{resposta:'Usuario invalido!'})
+    }
 })
 
 
