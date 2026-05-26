@@ -5,10 +5,40 @@
     <head>
         <title>carros disponiveis</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="/tabela.css">
     </head>
 
     <body>
-        
+        <div class="tabela">
+            <h1>Listagem Dos Carros disponivéis</h1>
+            <table style="border:2px red dashed;">
+                <thead>
+                        <th>Marca</th>
+                        <th >Modelo</th>
+                        <th>Ano</th>
+                        <th>qtde_disponivel</th>
+                </thead>   
+                <tbody> 
+                    <%
+                    for(var i = 0;i < items.length;i++){ %>
+                        <tr style="border:2px red dashed;">
+                            <td><%=items[i].marca %></td>
+                
+                            <td><%= items[i].modelo %></td>
+                
+                            <td><%= items[i].ano %></td>
+
+                            <td><%= items[i].qtde_disponivel %></td>
+                
+
+                        </tr>
+                    <% } %>
+                </tbody>   
+            </table>
+        </div>
+        <form action = "/gerenciar_carros" method="get">
+            <button type="submit">Voltar para página de gerenciamento</button>
+        </form>
     </body>
 
 </html>

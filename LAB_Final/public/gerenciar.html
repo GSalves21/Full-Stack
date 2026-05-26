@@ -17,11 +17,11 @@
             </div>
             <div>
                 <label for="Modelo">Modelo:</label>
-                <input type="text" id="modelo" nome="modelo" placeholder="Fiesta">
+                <input type="text" id="modelo" name="modelo" placeholder="Fiesta">
             </div>
             <div>
                 <label for="ano">Ano:</label>
-                <input type="number" id="ano" nome="ano" placeholder=2013>
+                <input type="number" id="ano" name="ano" placeholder=2013>
             </div>
             <div>
                 <label for ="qtde_disponivel">Quantidade disponivel:</label>
@@ -64,6 +64,14 @@
                     <input type="number" name="ano" id="ano" placeholder="2019">
                 </div>
                 <div>
+                    <label for="novo_ano">Ano:</label>
+                    <input type="number" name="novo_ano" id="novo_ano" placeholder="2020">
+                </div>
+                <div>
+                    <label for="marca_atualizada">Marca:</label>
+                    <input type="text" name="marca_atualizada" id="marca_atualizada" placeholder="Fiat">
+                </div>
+                <div>
                     <label for="qtde_disponivel">Quantidade disponivel atualizada</label>
                     <input type="number" name="qtde_disponivel" id="qtde_disponivel" placeholder="2">
                 </div>
@@ -79,7 +87,7 @@
             <h2>Vender</h2>
             <form action="/vender" method="post" id="form_4">
                 <div>
-                    <label for="veiculo_a_ser_atualizado">Veiculo a ser atualizado</label>
+                    <label for="veiculo_a_ser_atualizado">Veiculo vendido</label>
                     <input type="text" name="modelo" id="veiculo_a_ser_atualizado" placeholder="Corsa">
                 </div>
                 <div>
@@ -91,6 +99,12 @@
                     <button type="submit">Vender</button>
                 </div>
 
+            </form>
+        </div>
+        <div class="create_5">
+            <form action="/disponiveis" method="get" id="form_5">
+                <h2>Ver tabela de carros disponiveis</h1>
+                <button type="submit">Ver carros disponiveis</button>
             </form>
         </div>
 

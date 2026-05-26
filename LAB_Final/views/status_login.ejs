@@ -11,7 +11,7 @@
         <h1><%= resposta %></h1>
         
         <% if (resposta == 'usuario logado com sucesso'){ %>
-            <form action="/gerenciar_carros" method="post">
+            <form action="/gerenciar_carros" method="get">
                 <button type="submit">Continuar</button>
             </form>
             <% }else{%>
